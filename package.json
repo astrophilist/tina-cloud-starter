@@ -3,12 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "tinacms dev -c \"next dev\"",
-    "build": "next build"
-    "build-local": "next build",
-    "build-local": "next build",
+    "dev": "next dev",
+    "build": "next build",
+    "build-local": "npm run build && npm run export",
     "start": "next start",
-    "export": "npm run build && next export",
+    "export": "next export",
     "lint": "biome lint",
     "dev:build": "next build"
   },
